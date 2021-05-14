@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="style/Style.css" />
+</head>
+<body onload="getItems()">
+    <header>
+        <div id="header-container">
+            <div class="nav-content">
+                <a href="menu-item-list-customer.html">
+                    <span class="logo"> truYum </span>
+                </a>
+
+            </div>
+            <div class="nav-content">
+                <a href="menu-item-list-admin.html" class="content"> Menu </a>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="section1">
+            <h1> Edit Menu Items </h1>
+            <form action="edit-menu-item-status.html">
+                <table class="table2">
+                    <tr class="id-input">
+                        <td>
+                            <input type="number" name="item-id" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <div class="item-name">
+                                <label for="item-Name">
+                                    Name
+                                </label>
+                                <input type="text" name="item-Name" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Price">
+                                Price
+                            </label>
+                            <br />
+                            <input type="text" name="item-price" />
+
+                        </td>
+
+                        <td>
+                            <label for="item-stock">
+                                Active
+                            </label>
+                            <br />
+                            <input type="radio" id="item-stock-yes" name="item-stock" />
+                            <label for="item-stock"> Yes </label>
+
+                            <input type="radio" id="item-stock-no" name="item-stock" />
+                            <label for="item-stock"> No </label>
+
+
+                        </td>
+
+                        <td>
+                            <label for="item-dateOfLaunch">
+                                date Of Launch
+                            </label>
+                            <br />
+                            <input type="text" name="item-dateOfLaunch" />
+
+                        </td>
+
+                        <td>
+                            <label for="item-category"> Category </label>
+                            <br />
+                            <select name="item-category">
+                                <option value="Main-Course"> Main Course </option>
+                                <option value="Starters"> Starters </option>
+                                <option value="Dessert"> Dessert </option>
+                                <option value="Drinks"> Drinks </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="checkbox" name="item-Delivery" />
+                            <label for="item-delivery"> Free Delivery </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" class="buttons" value="Submit" />
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </section>
+    <footer>
+        Copyright © 2020
+    </footer>
+</body>
+</html>
